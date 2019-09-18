@@ -50,10 +50,10 @@ BOOL _keepOpenAfterSubmit;
 
 // The default is 'NO' which also means the 'keyboardWillHide' is not fired.
 // Note that for WKWebView users this will return 'NO' again, so that event is not fired.
-- (BOOL)forceTextInputbarAdjustmentForResponder:(UIResponder *)responder
-{
-  return [responder isKindOfClass:[UIWebView class]];
-}
+// - (BOOL)forceTextInputbarAdjustmentForResponder:(UIResponder *)responder
+// {
+//   return [responder isKindOfClass:[UIWebView class]];
+// }
 
 - (void)didChangeKeyboardStatus:(SLKKeyboardStatus)status {
   [super didChangeKeyboardStatus:status];
